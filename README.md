@@ -9,7 +9,9 @@ The script opens a socket on port 8000 and only can admin ONE connection.
 How to use it:
 
 The script in intended to be "something" serving data so you can use a simple console and type:
-$ telnet <host> 8000
+
+            $ telnet <host> 8000
+
 And the expected result:
 
       	$ telnet myexample.server.com 8000
