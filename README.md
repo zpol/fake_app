@@ -4,7 +4,7 @@
 
 So with this example we can simulate a fake app running on port 8000
 or some other kind of external webapp to be reverse proxied into a web server like nginx or apache.
-The script opens a socket on port 8000 and only can admin ONE connection. 
+The script opens a socket on port 8000 and can only handle ONE connection. 
 
 How to use it:
 
