@@ -3,10 +3,12 @@
 # LPIC201/202 - Practice
 
 So with this example we can simulate a fake app running on port 8000
-or some other kind of external webapp to be reverse proxied into a web server like nginx or apache
+or some other kind of external webapp to be reverse proxied into a web server like nginx or apache.
+The script opens a socket on port 8000 and only can admin ONE connection. 
 
-How to test this script:
-This script in intended to be "something" serving data so you can use a simple console and type:
+How to use it:
+
+The script in intended to be "something" serving data so you can use a simple console and type:
 $ telnet <host> 8000
 And the expected result:
 
@@ -22,11 +24,11 @@ And the expected result:
 
 NOTE: Just to be sure that the script is up and running, you can put the script into a loop like:
 
- $ while [ true ] ; do fake_app.sh ; sleep 1 ; done
+            $ while [ true ] ; do fake_app.sh ; sleep 1 ; done
 
  or you can also do it like this
 
- $ watch -n1 fake_app.sh
+            $ watch -n1 fake_app.sh
 
  Happy testing!
 
